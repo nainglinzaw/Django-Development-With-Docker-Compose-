@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<h1>Please answer the Question!!!</h1>
+<style>
+    html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 1rem;
+}
+
+.quiz,
+.choices {
+  list-style-type: none;
+  padding: 0;
+}
+
+.choices li {
+  margin-bottom: 5px;
+}
+
+.choices label {
+  display: flex;
+  align-items: center;
+}
+
+.choices label,
+input[type="radio"] {
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 8px;
+}
+
+.view-results {
+  padding: 1rem;
+  cursor: pointer;
+  font-size: inherit;
+  color: white;
+  background: teal;
+  border-radius: 8px;
+  margin-right: 5px;
+}
+
+.my-results {
+  padding: 1rem;
+  border: 1px solid goldenrod;
+}
+.my-result {
+  padding: 1rem;
+  border: 1px solid goldenrod;
+}
+
+</style>
+<title>JavaScript function to to calculate the percentage (%) of a number</title>
+<ul class="quiz">
+
+    <h4>1.What is the Django shortcut method to more easily render an html response?</h4>
+    <ul class="choices">
+      <li><label><input type="radio" name="question0" value="A"><span>render_to_html</span></label></li>
+      <li><label><input type="radio" name="question0" value="B"><span>render_to_response</span></label></li>
+      <li><label><input type="radio" name="question0" value="C"><span>response_render</span></label></li>
+      <li><label><input type="radio" name="question0" value="D"><span>render</span></label></li>
+
+<button onclick="myFunction()">View Answer</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "render_to_response";
+}
+</script>
+
+    </ul>
+
+    <h4>2.What are the features available in Django web framework?</h4>
+    <ul class="choices">
+      <li><label><input type="radio" name="question1" value="A"><span>Admin Interface (CRUD)</span></label></li>
+      <li><label><input type="radio" name="question1" value="B"><span>Templating</span></label></li>
+      <li><label><input type="radio" name="question1" value="C"><span> Form handling</span></label></li>
+      <li><label><input type="radio" name="question1" value="D"><span>All of the above</span></label></li>
+
+      <button onclick="myFunction1()">View Answer</button>
+<p id="demo1"></p>
+<script>
+function myFunction1() {
+  document.getElementById("demo1").innerHTML = "All of the above";
+}
+</script>
+
+    </ul>
+
+    <h4>3.What is the most easiest, fastest, and most stable deployment choice in most cases with Django?</h4>
+    <ul class="choices">
+      <li><label><input type="radio" name="question2" value="A"><span>FastCGI</span></label></li>
+      <li><label><input type="radio" name="question2" value="B"><span>mod_wsgi</span></label></li>
+      <li><label><input type="radio" name="question2" value="C"><span>SCGI</span></label></li>
+      <li><label><input type="radio" name="question2" value="D"><span>AJP</span></label></li>
+
+      <button onclick="myFunction2()">View Answer</button>
+<p id="demo2"></p>
+<script>
+function myFunction2() {
+  document.getElementById("demo2").innerHTML = "mod_wsgi";
+}
+</script>
+
+    </ul>
+
+    <h4>4.How many letters are there in "JS"?</h4>
+    <ul class="choices">
+      <li><label><input type="radio" name="question3" value="A"><span>2</span></label></li>
+      <li><label><input type="radio" name="question3" value="B"><span>1</span></label></li>
+      <li><label><input type="radio" name="question3" value="C"><span>3</span></label></li>
+      <li><label><input type="radio" name="question3" value="D"><span>4</span></label></li>
+
+      <button onclick="myFunction3()">View Answer</button>
+<p id="demo3"></p>
+<script>
+function myFunction3() {
+  document.getElementById("demo3").innerHTML = "2";
+}
+</script>
+
+    </ul>
+
+
+    <h4>5.What Commands are used to create a project in Django?</h4>
+    <ul class="choices">
+      <li><label><input type="radio" name="question4" value="A"><span>Project</span></label></li>
+      <li><label><input type="radio" name="question4" value="B"><span>_init_.py</span></label></li>
+      <li><label><input type="radio" name="question4" value="C"><span>manage.py</span></label></li>
+      <li><label><input type="radio" name="question4" value="D"><span>All of the above mentioned</span></label></li>
+
+      <button onclick="myFunction4()">View Answer</button>
+<p id="demo4"></p>
+<script>
+function myFunction4() {
+  document.getElementById("demo4").innerHTML = "All of the above mentioned";
+}
+</script>
+
+    </ul>
+
+
+    <h4>6.The architecture of Django consists of?</h4>
+    <ul class="choices">
+      <li><label><input type="radio" name="question5" value="A"><span>Models</span></label></li>
+      <li><label><input type="radio" name="question5" value="B"><span>Views</span></label></li>
+      <li><label><input type="radio" name="question5" value="C"><span>Templates</span></label></li>
+      <li><label><input type="radio" name="question5" value="D"><span>All of these</span></label></li>
+
+       <button onclick="myFunction5()">View Answer</button>
+<p id="demo5"></p>
+<script>
+function myFunction5() {
+  document.getElementById("demo5").innerHTML = "All of these";
+}
+</script>
+
+    </ul>
+
+    <h4>7.What is the purpose of settings.py?</h4>
+    <ul class="choices">
+      <li><label><input type="radio" name="question6" value="A"><span>To configure settings for the Django project</span></label></li>
+      <li><label><input type="radio" name="question6" value="B"><span>To configure settings for an app</span></label></li>
+      <li><label><input type="radio" name="question6" value="C"><span>To set the date and time on the server</span></label></li>
+      <li><label><input type="radio" name="question6" value="D"><span>To sync the database schema</span></label></li>
+
+       <button onclick="myFunction6()">View Answer</button>
+<p id="demo6"></p>
+<script>
+function myFunction6() {
+  document.getElementById("demo6").innerHTML = "To configure settings for the Django project";
+}
+</script>
+
+    </ul>
+
+    <h4>8.What are the caching strategies in Django?</h4>
+    <ul class="choices">
+      <li><label><input type="radio" name="question7" value="A"><span>File sytem caching</span></label></li>
+      <li><label><input type="radio" name="question7" value="B"><span> In-memory caching</span></label></li>
+      <li><label><input type="radio" name="question7" value="C"><span>Both A and B</span></label></li>
+      <li><label><input type="radio" name="question7" value="D"><span>None</span></label></li>
+
+       <button onclick="myFunction7()">View Answer</button>
+<p id="demo7"></p>
+<script>
+function myFunction7() {
+  document.getElementById("demo7").innerHTML = "Both A and B";
+}
+</script>
+
+    </ul>
+
+    <h4>9.In Django how would you retrieve all the ‘User’ records from a given database?</h4>
+    <ul class="choices">
+      <li><label><input type="radio" name="question8" value="A"><span>User.objects.all()</span></label></li>
+      <li><label><input type="radio" name="question8" value="B"><span>Users.objects.all()</span></label></li>
+      <li><label><input type="radio" name="question8" value="C"><span>User.all_records()</span></label></li>
+      <li><label><input type="radio" name="question8" value="D"><span>User.object.all()</span></label></li>
+
+       <button onclick="myFunction8()">View Answer</button>
+<p id="demo8"></p>
+<script>
+function myFunction8() {
+  document.getElementById("demo8").innerHTML = "User.objects.all()";
+}
+</script>
+
+    </ul>
+
+    <h4>10.What is the Django command to start a new app named ‘users’ in an existing project?</h4>
+    <ul class="choices">
+      <li><label><input type="radio" name="question9" value="A"><span>manage.py –newapp users</span></label></li>
+      <li><label><input type="radio" name="question9" value="B"><span>manage.py newapp users</span></label></li>
+      <li><label><input type="radio" name="question9" value="C"><span>manage.py –startapp users</span></label></li>
+      <li><label><input type="radio" name="question9" value="D"><span>manage.py startapp users</span></label></li>
+
+      <button onclick="myFunction9()">View Answer</button>
+<p id="demo9"></p>
+<script>
+function myFunction9() {
+  document.getElementById("demo9").innerHTML = "manage.py startapp users";
+}
+</script>
+
+    </ul>
+
+
+
+</ul>
+
+
+<button class="view-results" onclick="returnScore()">View Results</button>
+
+<span id="myresults" class="my-results">Your results will appear here</span>
+<span id="myresult" class="my-result">Your percentage will appear here</span>
+
+<script>
+    var answers = ["B", "D", "B", "A", "D", "D" , "A", "C", "A", "D" ],
+        tot = answers.length;
+
+function getCheckedValue(radioName) {
+  var radios = document.getElementsByName(radioName); // Get radio group by-name
+  for (var y = 0; y < radios.length; y++)
+    if (radios[y].checked) return radios[y].value; // return the checked value
+}
+
+function getScore() {
+  var score = 0;
+  for (var i = 0; i < tot; i++)
+    if (getCheckedValue("question" + i) === answers[i]) score += 1; // increment only
+  return score;
+}
+
+function returnScore() {
+  document.getElementById("myresults").innerHTML = "Your score is " + getScore() + "/" + tot;
+document.getElementById("myresult").innerHTML = "Your percentage is " + (getScore()*tot/100)*100 +'%';
+  if (getScore() > 9) {
+    console.log("Bravo")
+  }
+}
+</script>
+
+</body>
+</html>
