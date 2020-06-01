@@ -1,21 +1,18 @@
-version: '3'
+  version: '3'
 
-services:
-  db:
-    image: postgres
-    environment:
-      - POSTGRES_USER=telusko
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=45987
-  web:
-    build: .
-    command: python manage.py runserver 0.0.0.0:8000
-    volumes:
-        - .:/app
-    ports:
-        - "5432:5432"
-    depends_on:
-      - db
-    links:
-      - db:postgres
-
+  services:
+    db:
+      image: postgres
+      environment:
+        - POSTGRES_DB=telusko
+        - POSTGRES_USER=postgres
+        - POSTGRES_PASSWORD=45987
+    web:
+      build: .
+      command: python manage.py runserver 0.0.0.0:8000
+      volumes:
+        - .:/code
+      ports:
+        - "8000:8000"
+      depends_on:
+        - db
